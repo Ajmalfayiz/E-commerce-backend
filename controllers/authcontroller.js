@@ -24,7 +24,7 @@ const register = async (req, res) => {
             role: user.role,
             token: generateToken(user._id, user.role),
         });
-        console.log("Testing");
+  
 
     } catch (error) {
         res.status(500).json({
